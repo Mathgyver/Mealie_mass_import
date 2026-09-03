@@ -47,8 +47,8 @@ Ce dépôt regroupe des scripts conçus pour faciliter la transition, l'enrichis
 
 2. Installer les dépendances requises (par exemple requests) :
 
-   '''Bash
-    pip install requests
+   ```bash
+   pip install requests
 
 
 3. Configurer les paramètres de connexion :
@@ -61,29 +61,43 @@ Ce dépôt regroupe des scripts conçus pour faciliter la transition, l'enrichis
 
         PASSWORD : Votre mot de passe Mealie
 
+---
+
 ## 🚀 Utilisation
 
 Lancez les scripts directement depuis votre terminal selon vos besoins.
 
 Exemple d'exécution pour l'import d'une liste de recettes :
 
-  '''Bash
-  python 1_import.py
+   ```bash
+   python3 0_scapper_url
+   ```
+   ```bash
+   python3 1_import.py
+   ```
+   ```bash
+   python3 2_analyse_aliments
+   ```
+   ```bash
+   python3 3_doublons_aliments
+   ```
 
-(Assurez-vous d'avoir renseigné vos sources ou fichiers d'entrée, tels qu'un fichier list ou recipes.txt contenant les liens à traiter).
+---
 
 ## 📁 Structure du dépôt
 
-Plaintext
+```Plaintext
 
 .
-├── 0_scrapper_url.py      # Script pour scrapper les URLs de recette et generer le fichier recettes.txt
-├── 1_import.py            # Script principal d'import en masse
-├── 2_analyse_aliments.py  # Script permetant d'analyser les aliment des recettes importées
-├── 3_doublons_aliments.py # Script permetant d'analyser les doublons potentiels, genere un fichier doublons_aliments.txt pour fusionner manuelement apres analyse
-├── requirements.txt       # Dépendances Python du projet
-└── README.md              # Documentation du projet
+├── 0_scrapper_url.py         # Script pour scrapper les URLs de recette et generer le fichier recettes.txt
+├── 1_import.py               # Script principal d'import en masse
+├── 2_analyse_aliments.py     # Script permetant d'analyser les aliment des recettes importées
+├── 3_doublons_aliments.py    # Script permetant d'analyser les doublons potentiels, genere un fichier doublons_aliments.txt pour fusionner                                     manuelement apres analyse
+├── requirements.txt          # Dépendances Python du projet
+└── README.md                 # Documentation du projet
+```
 
+---
 
 🤝 Contribution
 
@@ -98,6 +112,8 @@ Les contributions, suggestions et améliorations sont les bienvenues ! N'hésite
     Poussez vers la branche (git push origin feature/AmazingFeature)
 
     Ouvrez une Pull Request
+
+---
 
 📜 Licence
 
