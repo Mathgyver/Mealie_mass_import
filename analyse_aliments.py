@@ -4,9 +4,9 @@ import time
 # ------------------------------------------------------------------
 # PARAMETRES A ADAPTER
 # ------------------------------------------------------------------
-mail = "vallat.mathieu@gmail.com"
-password = "M@thgyver240781*/"
-mealie_url = "http://192.168.1.200:9000"   # sans slash final
+mail = "mail de connection"
+password = "mot de passe"
+mealie_url = "URL de mealie"   # sans slash final
 parser = "nlp"                             # "nlp" (recommande) ou "brute"
 per_page = 50
 # ------------------------------------------------------------------
