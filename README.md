@@ -48,7 +48,7 @@ Ce dépôt regroupe des scripts conçus pour faciliter la transition, l'enrichis
 2. Installer les dépendances requises (par exemple requests) :
 
    '''Bash
-   pip install requests
+    pip install requests
 
 
 3. Configurer les paramètres de connexion :
