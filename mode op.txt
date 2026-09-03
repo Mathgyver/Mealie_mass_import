@@ -1,6 +1,0 @@
--Le script import.py va piocher dans le fichier recettes.txt et importe une a une toutes les recettes
--Le script analyse.py permet de reconnaitre les aliments
--Le Script doublon aliments permet de generer un rapport pour fusionner manuelement les alimens en doublon
-
--Pour executer les scripts , dans le terminal HAOS, dans le repertoire contenant le script, 
-taper: python3 "nomduscript.py"
