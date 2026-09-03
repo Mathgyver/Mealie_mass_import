@@ -5,9 +5,9 @@ import time
 # PARAMETRES A ADAPTER SI BESOIN
 # ------------------------------------------------------------------
 input_file = "recettes.txt"                      # fichier avec 1 URL par ligne, dans le meme dossier
-mail = "vallat.mathieu@gmail.com"
-password = "M@thgyver240781*/"
-mealie_url = "http://192.168.1.200:9000"          # sans slash final
+mail = "mail de connection"
+password = "mot de passe"
+mealie_url = "URL de mealie"   # sans slash final
 
 # Filtrage par mot-cle sur l'URL (le nom de la recette y figure generalement).
 # Laissez la liste vide [] pour tout importer sans filtre.
