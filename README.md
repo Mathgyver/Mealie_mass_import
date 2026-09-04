@@ -89,7 +89,7 @@ Exemple d'exécution pour l'import d'une liste de recettes :
 ```Plaintext
 
 .
-├── 0_scrapper_url.py         # Script pour scrapper les URLs de recette et generer le fichier recettes.txt
+├── 0_scrapper_url.py         # Script pour scrapper les URLs de recette et generer le fichier .txt
 ├── 1_import.py               # Script principal d'import en masse
 ├── 2_analyse_aliments.py     # Script permetant d'analyser les aliment des recettes importées
 ├── 3_doublons_aliments.py    # Script permetant d'analyser les doublons potentiels, genere un fichier doublons_aliments.txt pour fusionner                                     manuelement apres analyse
