@@ -4,7 +4,7 @@ import requests
 from urllib.parse import urljoin, urlparse
 
 # ------------------------------------------------------------------
-OUTPUT_FILE = "recettes.txt"
+OUTPUT_FILE = "recettes.txt"                      # nom propose par defaut (modifiable a l'execution)
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
@@ -158,6 +158,14 @@ def main():
         "(ex: /recettes/ - indispensable pour filtrer proprement) : "
     ).strip()
 
+    output_file = input(
+        f"Nom du fichier .txt de sortie (Entree = {OUTPUT_FILE}) : "
+    ).strip()
+    if not output_file:
+        output_file = OUTPUT_FILE
+    elif not output_file.lower().endswith(".txt"):
+        output_file += ".txt"
+
     print(f"\nConnexion initiale à {sitemap_url} ...")
     content = fetch(sitemap_url)
     if not content:
@@ -188,15 +196,15 @@ def main():
                 time.sleep(0.3)
 
     sorted_urls = sorted(all_urls)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         for u in sorted_urls:
             f.write(u + "\n")
 
-    print(f"\nTerminé : {len(sorted_urls)} URLs de recettes uniques écrites dans {OUTPUT_FILE}")
+    print(f"\nTerminé : {len(sorted_urls)} URLs de recettes uniques écrites dans {output_file}")
 
     try:
         from google.colab import files
-        files.download(OUTPUT_FILE)
+        files.download(output_file)
     except ImportError:
         pass
 
