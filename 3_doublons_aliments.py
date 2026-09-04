@@ -6,9 +6,9 @@ import requests
 # ------------------------------------------------------------------
 # PARAMETRES A ADAPTER
 # ------------------------------------------------------------------
-mail = "mail de connection"
-password = "mot de passe"
-mealie_url = "URL de mealie"   # sans slash final
+mail = "votre_mail"
+password = "motdepasse"
+mealie_url = "url_de_mealie"          # sans slash finall
 per_page = 100
 similarity_threshold = 0.85   # 0.0 a 1.0 : plus haut = moins de faux positifs
 output_file = "rapport_doublons_aliments.txt"
