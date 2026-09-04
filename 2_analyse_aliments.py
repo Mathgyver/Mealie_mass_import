@@ -4,9 +4,9 @@ import time
 # ------------------------------------------------------------------
 # PARAMETRES A ADAPTER
 # ------------------------------------------------------------------
-mail = "mail de connection"
-password = "mot de passe"
-mealie_url = "URL de mealie"   # sans slash final
+mail = "votre_mail"
+password = "motdepasse"
+mealie_url = "url_de_mealie"          # sans slash final
 parser = "nlp"                             # "nlp" (recommande) ou "brute"
 per_page = 50
 # ------------------------------------------------------------------
